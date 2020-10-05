@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg-1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 600px;
+    font-family: sans-serif;
+}
+.manu-bar{
+    background: rgba(230, 100, 25, 0.76);
+    text-align: center;
+  
+
+}
+.manu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+}
+li{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.manu-bar ul li:hover{
+    background: rgba(143, 62, 15, 0.829);
+    border-radius: 3px;
+    color: black;
+}
+
+.manu-bar .fa{
+    margin-right: 10px;
+}
+
+.sub-manu{
+    display: none;
+
+}
+.manu-bar ul li:hover .sub-manu{
+    display: block;
+    position: absolute;
+    background: rgba(230, 100, 25, 0.76);
+    margin-top: 15px;
+    margin-left: -20px;
+
+}
+.manu-bar ul li:hover .sub-manu ul{
+    display: block;
+    margin:10px;
+}
+.manu-bar ul li:hover .sub-manu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.manu-bar ul li:hover .sub-manu ul li:last-child{
+    border-bottom: none;
+}
+
+.manu-bar ul li:hover .sub-manu ul li a:hover{
+    color:#000
+}
+
+.box{
+    height: auto;
+    font-size: xx-large;
+    background-color:rgba(230, 100, 25, 0.76);
+    position: absolute;
+    bottom: 19px;
+    right: 0px;
+
+}
+strong{
+    font-family: 'Bad Script', cursive;
+}
